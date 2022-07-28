@@ -15,6 +15,12 @@ public class Rook extends ChessPiece{
 		return "R";
 		//onde vai ter a peça no tabuleiro, vai ter somente a primeira letra Rook
 	}
-	
+
+
+	@Override
+	public boolean[][] possibleMoves() {
+		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
+		return mat;
+	}
 
 }
