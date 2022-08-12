@@ -38,7 +38,7 @@ public class ChessPosition {
 	
 	protected static ChessPosition fromPosition(Position position) {
 		//casting pra char pq a conversão não é automática
-		return new ChessPosition((char)('a' - position.getColumn()), 8 - position.getRow());
+		return new ChessPosition((char)('a' + position.getColumn()), 8 - position.getRow());
 	}
 	
 	// imprimindo a posição de xadrez na ordem. "" vazio para forçar a concatenação de strings.
